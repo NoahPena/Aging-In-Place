@@ -11,7 +11,11 @@
 	
 		<!--testing embedded php before we assume ajax. cus ajax is a bitch.
 			but we will probably have to use it eventually.-->
+<<<<<<< HEAD
 	<?php	
+=======
+	<?php
+>>>>>>> origin/master
 		if(isset($_POST['switch'])) {
 			$switch = $_POST['switch'];
 			
@@ -27,6 +31,7 @@
 		else {
 			echo('nothing selected');
 		}
+<<<<<<< HEAD
 		exec('nodejs test.js');
 		exec('gpio mode 1 in');
 		$input = exec('gpio read 1');
@@ -39,6 +44,9 @@
 		{
 			echo("\nbutton pressed\n");
 		}			
+=======
+				
+>>>>>>> origin/master
 	?>
 
 	<body>
@@ -46,8 +54,13 @@
 			<!--could submit to another php form but better to do inline for now-->
 			<!--UNTESTED BUT A GOOD STARTING POINT-->
 		<form action="" method="POST">
+<<<<<<< HEAD
 		
 			Pain In My Ass 2.0: The Movie
+=======
+		Pain in my ass 2.0: the movie
+	
+>>>>>>> origin/master
 	
 			<div class="content-wrap">
 				<p>on: <input type="radio" name="switch" value="on"><br /></p>
